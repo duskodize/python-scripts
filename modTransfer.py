@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+#this script transfer steam workshop mods for Conan Exile to another place 
+#then create symlink to them in the game's mod directory
+
 import os
 import sys
 import shutil
