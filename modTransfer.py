@@ -63,7 +63,7 @@ def getLastUpdate(id):
     dt = datetime.fromtimestamp(ts)
     return dt.strftime('%d %h %Y @ %H:%M')
 
-print("This script moves steam workshop mods to conan exile game directory")
+print("This script moves steam workshop mods to conan exile mod directory")
 
 print("\nPress Enter to continue or press Esc to exit: ")
 
