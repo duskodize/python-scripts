@@ -120,7 +120,7 @@ if __name__ == "__main__":
                             if os.path.splitext(filename)[1].lower() == modExt:
                                 try:
                                     linkTarget = os.path.join(root,filename)
-                                    linkPath = os.path.join(desDir,filename)
+                                    linkPath = os.path.join(modPath,filename)
                                     if not linkTarget == linkPath:
                                         os.symlink(linkTarget, linkPath)
                                 except Exception as ex:
@@ -132,7 +132,9 @@ if __name__ == "__main__":
                     
                     if os.path.isdir(srcDir):
                         shutil.rmtree(srcDir)
-            input("\nPress Enter to exit...")
+            input("Press enter to exit...")
+            sys.stdin.readline()
     except Exception as ex:
         print(str(ex))
-        input("\nPress Enter to exit...")
+        input("Press enter to exit...")
+        sys.stdin.readline()
